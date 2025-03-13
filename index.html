@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo" alt="Logo">
+                <ul class="nav-links">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Work">Work/Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <div class="header-text">
+                <p>Student-Programmer</p>
+                <h1>Hello, I'm <span>Mahesh</span>.</h1>
+            </div>
+        </div>
+    </header>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image.jpg" alt="photo" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1>
+                    <p>I am a dedicated Computer Science Engineer with a strong focus on problem-solving and software development.
+                       With a passion for coding and a commitment to continuous learning,  
+                       <br>I strive to leverage technology to create innovative solutions that address real-world challenges.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Programming Languages</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Interests')">Interests & Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>C</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>HTML & CSS</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023</span><br>Undergraduate Student at Vardhaman.</li>
+                            <li><span>2021</span><br>Student at Sri Chaitanya.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Interests">
+                        <ul>
+                            <li><span>Coding</span></li>
+                            <li><span>Lifelong Learning</span></li>
+                            <li><span>Photography</span></li>
+                            <li><span>Reading Comics</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Work">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <div class="work-list">
+                <div class="work-item">
+                    <a href="https://mahesh0002.github.io/Tic-Tac-Toe/" target="_blank">
+                        <div class="project-title">Tic-Tac-Toe Game</div>
+                        <div class="project-description">An interactive game built with HTML, CSS, and JavaScript.</div>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <a href="https://mahesh0002.github.io/To-Do/" target="_blank">
+                        <div class="project-title">To-Do</div>
+                        <div class="project-description">An interactive To-Do built with HTML, CSS, and JavaScript.</div>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <a href="https://mahesh0002.github.io/Simple-Calculator/" target="_blank">
+                        <div class="project-title">Calculator App</div>
+                        <div class="project-description">An accessible, mobile-friendly calculator web app.</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> maheshganji057@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 7032436352</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/GanjiMahesh?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/g-mahesh-781237283/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_mahesh_ganji_/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="Name" required>
+                            <label for="Name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="Your email" required>
+                            <label for="Your email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <label for="Message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Mahesh.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
